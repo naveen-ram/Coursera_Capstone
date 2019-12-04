@@ -23,6 +23,10 @@ The data sources for this project are two-fold. I will be using the Foursquare A
 
 #### 2.2 Data acquisition
 
+Data will be acquired from multiple sources. The main dataset being used in this project comes from Wikipedia.com. It consists of 314 of the most populous cities in the US. This data will be used to acquire 3 additional data. First, it will be used to get geolocation data, longitude and latitude, using the geopy.geocoders API in python. Secondly, it will be used to get data from the Foursquare API. This will provide information about all the ameneties and attractions in each city within a specified radius to the location data. Lastly, the location data will be used to get average temperature data from the weather API. All of this information will be stored in a pandas DataFrame. The next step will be to clean the data from this DataFrame. 
+
 #### 2.3 Data cleaning
+
+This step involves keep good information and getting rid of useless information. In our case the only fields we care about from the wikipedia table are the city and state information. So, we will clear out the columns of useless information. Additionally, we will need to move the data around so that the city becomes the first column of the data. We can even combine the city and state data into one column with the state being converted to its two letter abbreviation. This will allow the other steps to be much easier. We will have to look at all the amenety and attraction info to see what is useful and what isn't. Based on this get rid of the 10 least popular ameneties in each of the regions then take the mean of the counts. This allows us to work with normalized data. 
 
 #### 2.4 Feature Selection
