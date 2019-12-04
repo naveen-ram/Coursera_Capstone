@@ -30,3 +30,7 @@ Data will be acquired from multiple sources. The main dataset being used in this
 This step involves keep good information and getting rid of useless information. In our case the only fields we care about from the wikipedia table are the city and state information. So, we will clear out the columns of useless information. Additionally, we will need to move the data around so that the city becomes the first column of the data. We can even combine the city and state data into one column with the state being converted to its two letter abbreviation. This will allow the other steps to be much easier. We will have to look at all the amenety and attraction info to see what is useful and what isn't. Based on this get rid of the 10 least popular ameneties in each of the regions then take the mean of the counts. This allows us to work with normalized data. 
 
 #### 2.4 Feature Selection
+
+### 3. Exploratory Data Analysis
+### 4. Prediction and Analysis
+### 5. Conclusion and Discussion
