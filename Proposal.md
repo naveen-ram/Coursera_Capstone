@@ -14,6 +14,8 @@ Retirees have so many options for retirement, especially for those in early reti
 
 #### 1.3 Interest
 
+Interested parties in this project would be people looking to move to a new city similar to their current one. Specifically, this would be of utmost interest to retirees looking for a new city. 
+
 ### 2. Data sources, acquisition, and cleaning
 
 #### 2.1 Data sources
